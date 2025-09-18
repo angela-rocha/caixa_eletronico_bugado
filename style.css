@@ -1,0 +1,161 @@
+/* style.css - Estilo: Caixa Eletrônico Vermelho com tela branca e fonte cinza fosco */
+
+/* Reset simples */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Fundo da página */
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, #075c2b 0%, #150606 100%); /* fundo escuro para contraste */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estrutura principal do caixa (caixa externa vermelho) */
+.atm {
+  width: 360px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #1707f0 0%, #7a0f0f 100%); /* vermelho */
+  box-shadow: 0 14px 40px rgba(0,0,0,0.6), inset 0 3px 0 rgba(255,255,255,0.05);
+  padding: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho do caixa (pequena faixa com nome e led) */
+.atm h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffecec;
+  letter-spacing: 0.6px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* LED indicador (pequeno círculo) */
+.atm .led {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffcc00;
+  box-shadow: 0 0 6px rgba(255,204,0,0.6);
+}
+
+/* Tela branca do caixa (área de exibição) */
+.screen {
+  width: 100%;
+  background: #ffffff; /* tela branca */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: inset 0 3px 0 rgba(0,0,0,0.03), 0 6px 18px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Texto/visores dentro da tela */
+#display {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: transparent;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 1.4rem;
+  color: #6b6b6b; /* cinza fosco */
+  font-weight: 600;
+  pointer-events: none; /* apenas visual */
+}
+
+/* Mensagem menor (resultado/feedback) */
+.result {
+  width: 100%;
+  min-height: 36px;
+  text-align: right;
+  color: white; /* cinza fosco */
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Área dos controles (inputs e botões) */
+.controls {
+  width: 100%;
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Botões numéricos/operadores */
+.controls button {
+  width: 70px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #a61a1a 0%, #7c0e0e 100%); /* tom de vermelho mais escuro */
+  box-shadow: 0 6px 0 rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.03);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+/* Botões de ação (C e =) com destaque */
+.controls button.action {
+  background: linear-gradient(180deg, #252525 0%, #1a1a1a 100%); /* escuro */
+  color: #ffd9d9;
+}
+
+/* Hover e active */
+.controls button:hover { transform: translateY(-3px); }
+.controls button:active { transform: translateY(0); box-shadow: 0 3px 0 rgba(0,0,0,0.35); }
+
+/* Input numérico extra (campo para digitar o saque - opcional) */
+.input-full {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #f5f5f5;
+  color: #6b6b6b;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: inset 0 2px 0 rgba(0,0,0,0.02);
+}
+
+/* Responsividade */
+@media (max-width: 420px) {
+  .atm { width: 92%; padding: 16px; }
+  .controls button { width: 62px; height: 44px; font-size: 1rem; }
+  #display { font-size: 1.2rem; height: 44px; }
+}
+
+/* Pequeno detalhe: borda "porta" do caixa (efeito) */
+.atm::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 14px;
+  right: 14px;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.12);
+  filter: blur(6px);
+  z-index: 0;
+}
