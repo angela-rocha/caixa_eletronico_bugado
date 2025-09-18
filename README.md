@@ -1,12 +1,12 @@
 # Caixa_eletronico_bugado
 Um caixa eletrônico engraçado que devolve mensagens humoradas.
 
-<img width="1024" height="720" alt="Angel'e Bank 🏧 - Google Chrome 18_09_2025 15_04_03" src="https://github.com/user-attachments/assets/f60f52e7-23d3-4d19-be92-c2a06f5a5e34" />
+
 
 
 # Visualizar
 
-[Acessar Bank](https://angela-silva.github.io/caixa_eletronico_bugado/)
+[Acessar Bank](https://angela-rocha.github.io/caixa_eletronico_bugado/)
 
 # 🏧 Caixa Eletrônico Bugado
 
