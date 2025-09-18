@@ -3,6 +3,10 @@ Um caixa eletrônico engraçado que devolve mensagens humoradas.
 
 
 
+# Visualizar
+
+[Acessar Bank](https://angela-silva.github.io/caixa_eletronico_bugado/)
+
 # 🏧 Caixa Eletrônico Bugado
 
 Um projeto simples e divertido em **HTML, CSS e JavaScript**, que simula um caixa eletrônico... só que totalmente **bugado**!  
