@@ -1,5 +1,5 @@
 # Caixa_eletronico_bugado
-Um caixa eletrônico engraçado que devolve mensagens humoradas.
+Um caixa eletrônico divertido que devolve mensagens humoradas.
 
 <img width="1024" height="720" alt="Angel'e Bank 🏧 - Google Chrome 18_09_2025 15_26_16" src="https://github.com/user-attachments/assets/ac23ee15-ff50-4093-98b6-fe316f035864" />
 
