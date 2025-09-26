@@ -3,11 +3,11 @@ Um caixa eletrônico divertido que devolve mensagens humoradas.
 
 <img width="1024" height="720" alt="Angel'e Bank 🏧 - Google Chrome 18_09_2025 15_26_16" src="https://github.com/user-attachments/assets/ac23ee15-ff50-4093-98b6-fe316f035864" />
 
-# Visualizar
+## Visualizar
 
 [Acessar Bank](https://angela-rocha.github.io/caixa_eletronico_bugado/)
 
-# 🏧 Caixa Eletrônico Bugado
+## 🏧 Caixa Eletrônico Bugado
 
 Um projeto simples e divertido em **HTML, CSS e JavaScript**, que simula um caixa eletrônico... só que totalmente **bugado**!  
 Em vez de entregar dinheiro, ele devolve respostas engraçadas, irônicas e até um pouco filosóficas.  
