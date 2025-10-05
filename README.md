@@ -10,6 +10,7 @@ Um caixa eletrônico divertido que devolve mensagens humoradas.
 ## 🏧 Caixa Eletrônico Bugado
 
 Um projeto simples e divertido em **HTML, CSS e JavaScript**, que simula um caixa eletrônico... só que totalmente **bugado**!  
+
 Em vez de entregar dinheiro, ele devolve respostas engraçadas, irônicas e até um pouco filosóficas.  
 
 ---
