@@ -57,6 +57,6 @@ Uma página para brincar com amigos
 
 Parte do seu portfólio como exemplo de criatividade em Front-End
 
-✨ Créditos
+## ✨ Créditos
 Feito com bug e carinho 🐞💖
 Se gostou da ideia, compartilhe e dê aquela estrela ⭐ no repositório.
